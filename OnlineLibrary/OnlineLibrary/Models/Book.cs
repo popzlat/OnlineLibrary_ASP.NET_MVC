@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace OnlineLibrary.Models
+﻿namespace OnlineLibrary.Models
 {
     public class Book
     {
@@ -25,6 +20,18 @@ namespace OnlineLibrary.Models
         void removeCopy()
         {
 
+        }
+        
+
+        public Book(int id,string isbn,string name,GenreEnum genre, string description,Author author,int pages,int quantity)
+        {
+            this.Id = id;
+            this.Isbn = isbn;
+            this.Name = name;
+            this.Genre = genre;
+            this.Author = author;
+            this.Pages = pages;
+            this.Quantity = quantity;
         }
 
 
