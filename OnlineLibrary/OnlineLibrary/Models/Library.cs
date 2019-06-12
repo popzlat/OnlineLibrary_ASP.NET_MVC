@@ -7,16 +7,18 @@ namespace OnlineLibrary.Models
 {
     public class Library
     {
+        private string Name;
+        private List<Book> books;
+
         public string LibraryName { get; set; }
-        public List<Book> Books { get; set; }
+        public Book Books { get; set; }
 
-
-        public Library(string libraryName, List<Book> bookList)
-        {   
-
-            LibraryName = libraryName;
-            Books = bookList;
-        }
         
+
+        public Library(string name, List<Book> books)
+        {
+            this.Name = name;
+            this.books = books;
+        }
     }
 }

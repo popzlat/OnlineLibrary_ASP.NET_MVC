@@ -1,12 +1,21 @@
-﻿@model Library
+﻿
+@model IEnumerable<OnlineLibrary.Models.Book>
+
 @{
-    ViewData["Title"] = "Index";
+    Layout = "_Layout"
 }
 
 <h2>Index</h2>
 
 <div class="container">
     <div>
-        <h4>Books</h4>
+        <h4>@ViewBag.Title</h4>
+        @foreach(var item in Model)
+        {
+           <div>
+               <h3>@item.Name</h3>
+               <h4>"Author "@item.Author.FirstName + "@item.Author.LastName"</h4>
+           </div>
+        }
     </div>
 </div>

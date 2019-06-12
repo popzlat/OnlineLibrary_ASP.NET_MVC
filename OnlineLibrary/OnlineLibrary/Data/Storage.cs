@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 namespace OnlineLibrary.Models
 {
-    internal static class Storage
+    public static class Storage
     {
 
         public static List<Book> Books = new List<Book>
@@ -22,6 +22,7 @@ namespace OnlineLibrary.Models
 
         };
 
-
+        public static Library NewLibrary = new Library("My Library", Books);
+        
     }
 }
