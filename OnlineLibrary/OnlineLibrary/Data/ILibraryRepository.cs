@@ -10,5 +10,9 @@ namespace OnlineLibrary.Data
     {
         Library GetBooks();
 
+        void Create(Book book);
+        void Update(Book book);
+        void Delete(Book book);
+        
     }
 }

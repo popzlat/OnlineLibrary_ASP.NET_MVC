@@ -13,12 +13,17 @@
         public int Quantity { get; set; }
 
 
-        void incraseQuantity( int aditionalQuantity)
+       public void  IncraseQuantity( int aditionalQuantity)
             {
+            var currentQuantity = this.Quantity;
+            Quantity = aditionalQuantity + currentQuantity;
+
             }
 
-        void removeCopy()
+       public void RemoveCopy( int removedCopy)
         {
+            var currentQuantity = this.Quantity;
+            Quantity = currentQuantity - removedCopy;
 
         }
         

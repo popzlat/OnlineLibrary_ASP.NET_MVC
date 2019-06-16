@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnlineLibrary.Data;
+using OnlineLibrary.Services;
 
 namespace OnlineLibrary
 {
@@ -21,6 +22,7 @@ namespace OnlineLibrary
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ILibraryRepository, LibraryRepository>();
+            services.AddTransient<ILibraryService, LibraryService>();
 
 
             services.Configure<CookiePolicyOptions>(options =>
@@ -54,7 +56,7 @@ namespace OnlineLibrary
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Library}/{action=Index}/{id?}");
+                    template: "{controller=Library}/{action=OnlineLibrary}/{id?}");
             });
         }
     }

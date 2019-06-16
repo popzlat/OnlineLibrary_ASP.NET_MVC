@@ -1,26 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OnlineLibrary.Data;
+using OnlineLibrary.Models;
+using OnlineLibrary.Services;
 
 namespace OnlineLibrary.Controllers
 {
     public class LibraryController : Controller
     {
-        private readonly ILibraryRepository  _libraryRepository;
+        private readonly ILibraryService  _libraryservice;
 
-        public LibraryController(ILibraryRepository libraryRepository)
+        public LibraryController(ILibraryService libraryservice)
         {
-            
-            _libraryRepository = libraryRepository;
-
+            _libraryservice = libraryservice;
         }
 
 
-        public IActionResult Index()
+        public IActionResult OnlineLibrary()
         {
             ViewBag.Title = "Book overview";
-            var books = _libraryRepository.GetBooks();
-
-            return View(books);
+            Library library = _libraryservice.GetBooks();
+            return View(library);
         }
     }
 }

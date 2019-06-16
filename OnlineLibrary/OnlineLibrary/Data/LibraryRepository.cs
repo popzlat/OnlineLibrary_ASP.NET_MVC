@@ -6,11 +6,32 @@ using OnlineLibrary.Models;
 
 namespace OnlineLibrary.Data
 {
-    public class LibraryRepository : ILibraryRepository
+    public class LibraryRepository: ILibraryRepository
     {
+        public void Create(Book book)
+        {
+            Storage.Books.Add(book);
+        }
+
+        public void Delete(Book book)
+        {
+            Storage.Books.Remove(book);
+        }
+
         public Library GetBooks()
         {
-            return Storage.Books;
+            return Storage.NewLibrary;
+        }
+
+        public void Update(Book book)
+        {
+            var obj = Storage.Books.FirstOrDefault(x => x.Id == book.Id);
+
+            if (obj != null)
+            {
+                Storage.Books.Remove(obj);
+                Storage.Books.Add(book);
+            }
         }
     }
 }

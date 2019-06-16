@@ -13,12 +13,7 @@ namespace OnlineLibrary.Models
         public DateTime LoanDate { get; set; }
         public LoanStatus Status { get; set; }
 
-
-       public int ReturnBook()
-        {
-            return 1;
-           // TODO .... return the amount of penalty if needed
-        }
+        
 
 
     }

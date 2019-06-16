@@ -13,5 +13,12 @@ namespace OnlineLibrary.Models
         public string Password { get; set; }
         public Role Role { get; set; }
 
+        public User( int id , string email, string password , Role role)
+        {
+            Id = id;
+            Email = email;
+            Password = password;
+            Role = role;
+        }
     }
 }

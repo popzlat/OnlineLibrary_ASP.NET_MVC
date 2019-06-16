@@ -1,24 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OnlineLibrary.Models
 {
     public class Library
     {
-        private string Name;
-        private List<Book> books;
+        public string Name { get; set; }
+        public List<Book> ListOfBooks { get; set; }
 
-        public string LibraryName { get; set; }
-        public Book Books { get; set; }
-
-        
-
-        public Library(string name, List<Book> books)
+        public Library( string name,List<Book> books)
         {
-            this.Name = name;
-            this.books = books;
+            Name = name;
+            ListOfBooks = books;
         }
     }
 }
