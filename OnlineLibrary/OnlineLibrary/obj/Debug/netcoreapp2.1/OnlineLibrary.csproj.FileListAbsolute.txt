@@ -64,3 +64,4 @@ C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrar
 C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\OnlineLibrary.pdb
 C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\OnlineLibrary.csproj.CopyComplete
 C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\OnlineLibrary.g.cshtml.cs
+C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Create.g.cshtml.cs
