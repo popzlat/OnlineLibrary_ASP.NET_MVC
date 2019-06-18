@@ -1,0 +1,20 @@
+﻿@model OnlineLibrary.Models.Library
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Model.Name Details </h2>
+
+<div class="container">
+    <div class="col-md-6">
+        <form asp-action="Details" asp-controller="Library">
+            <div class="form-control">
+                @ViewBag
+
+            </div>
+
+        </form>
+
+    </div>
+</div>

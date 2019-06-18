@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using OnlineLibrary.Data;
 using OnlineLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,10 @@ namespace OnlineLibrary.ViewModels
     public class BookViewModel
     {
 
-        [Required]
-        [DisplayName("Id of the book")]
-        public int Id { get; set; }
 
+
+        [Required]
+        [DisplayName("ISBN")]
         public string Isbn { get; set; }
 
         [Required]
@@ -24,23 +25,26 @@ namespace OnlineLibrary.ViewModels
 
         public List<GenreEnum> SelectGenre { get; set; }
 
+        [Required]
+        [DisplayName("Description")]
         public string Description { get; set; }
-        public Author Author { get; set; }
+
+        [Required]
+        [DisplayName("Author name")]
+        public string Author { get; set; }
         public int Pages { get; set; }
+
 
         [Required]
         [DisplayName("Quantity of the book")]
-        [MinLength(1)]
         public int Quantity { get; set; }
-
 
 
         public BookViewModel()
         {
 
-            
 
-            
+
         }
     }
 }

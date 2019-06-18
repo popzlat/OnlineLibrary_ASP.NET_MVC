@@ -8,7 +8,7 @@ namespace OnlineLibrary.Controllers
 {
     public class LibraryController : Controller
     {
-        private readonly ILibraryService  _libraryservice;
+        private readonly ILibraryService _libraryservice;
 
         public LibraryController(ILibraryService libraryservice)
         {
@@ -29,17 +29,34 @@ namespace OnlineLibrary.Controllers
             return View(book);
         }
 
-        
-        //[HttpPost]
-        //public IActionResult Create(PizzaViewModel pizza)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View(pizza);
-        //    }
 
-        //    _pizzaService.CreatePizza(pizza);
-        //    return RedirectToAction("Menu", "Pizza");
-        //}
+        [HttpPost]
+        public IActionResult Create(BookViewModel book)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(book);
+            }
+
+            _libraryservice.Create(book);
+            return RedirectToAction("OnlineLibrary", "Library");
+        }
+
+        public IActionResult Details(int id)
+        {
+            ViewBag.Title = "Book overview";
+            Library library = _libraryservice.GetBooks();
+            return View(library);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        public IActionResult Delete (int id)
+        {
+            return View();
+        }
     }
 }
