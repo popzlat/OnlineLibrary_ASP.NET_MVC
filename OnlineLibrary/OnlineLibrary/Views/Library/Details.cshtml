@@ -1,20 +1,27 @@
-﻿@model OnlineLibrary.Models.Library
-
+﻿@model Book
 @{
     ViewData["Title"] = "Details";
 }
 
-<h2>@Model.Name Details </h2>
+<h2>Details</h2>
 
 <div class="container">
-    <div class="col-md-6">
-        <form asp-action="Details" asp-controller="Library">
-            <div class="form-control">
-                @ViewBag
+    <h1>@Model.Name</h1>
+    <table>
+        <tr>
+            <td>Author:  @Model.Author</td>
 
-            </div>
+            
+        </tr>
+        <tr>
+            <td>Pages:  @Model.Pages</td>
+        </tr>
+        <tr>
+            <td>Isbn:  @Model.Isbn</td>
+        </tr>
+        <tr>
+            <td>Description:  @Model.Description</td>
+        </tr>
+    </table>
 
-        </form>
-
-    </div>
 </div>

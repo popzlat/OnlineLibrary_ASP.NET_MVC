@@ -102,3 +102,7 @@ C:\Users\zlatko.poposki\Desktop\c#\OnlineLibrary\OnlineLibrary_ASP.NET_MVC\Onlin
 C:\Users\zlatko.poposki\Desktop\c#\OnlineLibrary\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Details.g.cshtml.cs
 C:\Users\zlatko.poposki\Desktop\c#\OnlineLibrary\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Edit.g.cshtml.cs
 C:\Users\zlatko.poposki\Desktop\c#\OnlineLibrary\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Delete.g.cshtml.cs
+C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Delete.g.cshtml.cs
+C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Details.g.cshtml.cs
+C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Library\Edit.g.cshtml.cs
+C:\Users\Zlatko\Desktop\MVC\OnlineLibrary_ASP.NET_MVC\OnlineLibrary\OnlineLibrary\obj\Debug\netcoreapp2.1\Razor\Views\Loan\LoanBook.g.cshtml.cs

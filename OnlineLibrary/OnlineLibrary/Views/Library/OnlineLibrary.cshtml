@@ -15,9 +15,6 @@
             <th>
                 Isbn
             </th>
-            <th>
-                Description
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -32,10 +29,7 @@
                     @Html.DisplayFor(model => book.Isbn)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => book.Description)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new {id = book.Id}) |
+                    @Html.ActionLink("Edit", "Edit", new { id = book.Id }) |
                     @Html.ActionLink("Details", "Details", new { id = book.Id }) |
                     @Html.ActionLink("Delete", "Delete", new { id = book.Id })
                 </td>
@@ -43,3 +37,7 @@
         }
     </tbody>
 </table>
+<br />
+<div>
+    <a asp-controller="Loan" asp-action="LoanBook" >Loan Book</a>
+</div>

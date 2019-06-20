@@ -23,6 +23,11 @@ namespace OnlineLibrary.Data
             return Storage.NewLibrary;
         }
 
+        public Book GetById(int id)
+        {
+           return Storage.Books.FirstOrDefault(x => x.Id == id);
+        }
+
         public void Update(Book book)
         {
             var obj = Storage.Books.FirstOrDefault(x => x.Id == book.Id);

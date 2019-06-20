@@ -1,7 +1,45 @@
-﻿
+﻿@model OnlineLibrary.ViewModels.EditBookViewModel
 @{
     ViewData["Title"] = "Edit";
 }
 
 <h2>Edit</h2>
 
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" asp-controller="Library">
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Isbn" class="control-label"></label>
+                <input asp-for="Isbn" class="form-control" />
+                <span asp-validation-for="Isbn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
+            <input type="submit" value="Save" class="btn btn-primary" />
+
+            <div>
+                <a asp-action="OnlineLibrary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>

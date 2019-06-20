@@ -13,7 +13,7 @@ namespace OnlineLibrary.ViewModels
     public class BookViewModel
     {
 
-
+        public int Id { get; set; }
 
         [Required]
         [DisplayName("ISBN")]

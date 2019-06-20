@@ -12,9 +12,5 @@ namespace OnlineLibrary.Models
         public User User { get; set; }
         public DateTime LoanDate { get; set; }
         public LoanStatus Status { get; set; }
-
-        
-
-
     }
 }

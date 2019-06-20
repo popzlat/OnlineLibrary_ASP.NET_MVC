@@ -34,6 +34,7 @@
             this.Isbn = isbn;
             this.Name = name;
             this.Genre = genre;
+            this.Description = description;
             this.Author = author;
             this.Pages = pages;
             this.Quantity = quantity;

@@ -12,6 +12,7 @@ namespace OnlineLibrary.Data
         void Create(Book book);
         void Update(Book book);
         void Delete(Book book);
+        Book GetById(int id);
         
     }
 }

@@ -57,6 +57,10 @@ namespace OnlineLibrary
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Library}/{action=OnlineLibrary}/{id?}");
+
+                routes.MapRoute(
+                    name: "Loan book",
+                    template: "{controller=Loan}/{action=Loan}/{id?}");
             });
         }
     }
