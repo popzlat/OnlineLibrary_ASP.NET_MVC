@@ -56,7 +56,7 @@ using OnlineLibrary.Models;
             WriteLiteral("\r\n\r\n<h2>OnlineLibrary</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(55, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1efad033fc494a549d06d5481ab1051b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d855457a711444ba0c8cdadc1140a86", async() => {
                 BeginContext(78, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -145,7 +145,7 @@ using OnlineLibrary.Models;
             WriteLiteral("    </tbody>\r\n</table>\r\n<br />\r\n<div>\r\n    ");
             EndContext();
             BeginContext(978, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52a0546c453d49c8b9a986f37f49e900", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cd18bdfcba248d3a0b2a8db2e886fc2", async() => {
                 BeginContext(1026, 9, true);
                 WriteLiteral("Loan Book");
                 EndContext();

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnlineLibrary.Data;
+using OnlineLibrary.Models;
 using OnlineLibrary.Services;
 
 namespace OnlineLibrary
@@ -23,7 +24,6 @@ namespace OnlineLibrary
         {
             services.AddTransient<ILibraryRepository, LibraryRepository>();
             services.AddTransient<ILibraryService, LibraryService>();
-
 
             services.Configure<CookiePolicyOptions>(options =>
             {
