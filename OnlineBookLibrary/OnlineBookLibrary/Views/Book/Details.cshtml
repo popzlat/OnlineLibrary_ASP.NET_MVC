@@ -1,0 +1,41 @@
+﻿@model Book
+
+<h1>Details for @Model.Name</h1>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        <th>
+            Book @Model.Name
+        </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Isbn: @Model.Isbn
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @*Need to use include to get the name from the author ???? *@
+                    Author: @Model.Author
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Description: @Model.Description
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pages: @Model.Pages
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</div>

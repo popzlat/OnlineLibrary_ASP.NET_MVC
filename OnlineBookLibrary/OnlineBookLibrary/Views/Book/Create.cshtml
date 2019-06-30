@@ -1,0 +1,47 @@
+﻿@model OnlineBookLibrary.ViewModels.BookViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create new Book</h2>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" asp-controller="Library">
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="AllAuthors" class="control-label"></label>
+                <select asp-for="AllAuthors" asp-items="@Model.AllAuthors" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Isbn" class="control-label"></label>
+                <input asp-for="Isbn" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="AllGenres" class="control-label"></label>
+                <select asp-for="AllGenres" asp-items="@Model.AllGenres" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Pages" class="control-label"></label>
+                <input asp-for="Pages" class="form-control" />
+            </div>
+
+
+            <input type="submit" value="Create" class="btn btn-primary" />
+
+        </form>
+    </div>
+</div>
