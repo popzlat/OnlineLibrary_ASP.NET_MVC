@@ -8,10 +8,8 @@ namespace OnlineLibrary.Models
     public class LoanStatus
     {
 
-
         public bool Active { get; set; }
         public bool Finished { get; set; }
-
 
     }
 }
