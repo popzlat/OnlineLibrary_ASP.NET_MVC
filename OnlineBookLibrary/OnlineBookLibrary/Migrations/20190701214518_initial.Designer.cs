@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineBookLibrary.Models;
 
 namespace OnlineBookLibrary.Migrations
 {
     [DbContext(typeof(BookLibraryDbContext))]
-    partial class BookLibraryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190701214518_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -183,11 +185,13 @@ namespace OnlineBookLibrary.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Name");
+                    b.Property<int?>("LibrarianId");
 
                     b.Property<int>("UserId");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("LibrarianId");
 
                     b.HasIndex("UserId")
                         .IsUnique();
@@ -254,6 +258,10 @@ namespace OnlineBookLibrary.Migrations
 
             modelBuilder.Entity("OnlineBookLibrary.Models.Role", b =>
                 {
+                    b.HasOne("OnlineBookLibrary.Models.User", "Librarian")
+                        .WithMany()
+                        .HasForeignKey("LibrarianId");
+
                     b.HasOne("OnlineBookLibrary.Models.User", "User")
                         .WithOne("Role")
                         .HasForeignKey("OnlineBookLibrary.Models.Role", "UserId")

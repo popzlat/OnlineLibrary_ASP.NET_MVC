@@ -12,9 +12,11 @@ namespace OnlineBookLibrary.Controllers
     public class BookController : Controller
     {
         private readonly IBookService _bookService;
-        public BookController(IBookService bookService)
+        private readonly IAuthorService _authorService;
+        public BookController(IBookService bookService, IAuthorService authorService)
         {
             _bookService = bookService;
+            _authorService = authorService;
         }
 
         public IActionResult Index()
@@ -33,16 +35,24 @@ namespace OnlineBookLibrary.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var book = new BookViewModel();
+            var book = new BookViewModel() { AllAuthors = _authorService.GetAllAuthors() };
             return View(book);
         }
 
-        //[HttpPost]
-        //public IActionResult Create(BookViewModel model)
-        //{
+        [HttpPost]
+        public IActionResult Create(BookViewModel model)
+        {
+            _bookService.CreateBook(model);
+            return RedirectToAction("Index", "Book");
+        }
 
-
-        //}
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var book = _bookService.GetBookById(id);
+            _bookService.DeleteBook(book.Id);
+            return RedirectToAction("Index", "Book");
+        }
 
     }
 }

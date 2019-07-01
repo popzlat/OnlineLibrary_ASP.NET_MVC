@@ -29,14 +29,11 @@ namespace OnlineBookLibrary.ViewModels
         [DisplayName("Author Name")]
         public List<SelectListItem> AllAuthors { get; set; }
 
-        [DisplayName("Author Name")]
+        [DisplayName("Pages")]
         public int Pages { get; set; }
-
 
         [DisplayName("Quantity of the book")]
         public int Quantity { get; set; }
-
-
 
 
         public BookViewModel()

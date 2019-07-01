@@ -36,6 +36,7 @@ namespace OnlineBookLibrary
             });
             //Here DepInject
             services.AddTransient<IRepository<Book>, BookRepository>();
+            services.AddTransient<IRepository<Author>, AuthorRepository>();
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<IAuthorService, AuthorService>();
 

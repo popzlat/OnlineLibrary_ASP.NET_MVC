@@ -12,12 +12,16 @@ namespace OnlineBookLibrary.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        public string Name { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
-        public User Librarian { get; set; }
         public ICollection<User>Users { get; set; }
+        public ICollection<UserRoll> UserRoles { get; set; }
 
 
-
-}
+        public Role( string name)
+        {
+            Name = name;
+        }
+    }
 }

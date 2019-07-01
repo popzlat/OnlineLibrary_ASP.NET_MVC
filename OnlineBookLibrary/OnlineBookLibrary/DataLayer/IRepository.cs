@@ -12,5 +12,6 @@ namespace OnlineBookLibrary.DataLayer
         void Delete(T obj);
         List<T> GetAll();
         T GetBookById(int id);
+        
     }
 }

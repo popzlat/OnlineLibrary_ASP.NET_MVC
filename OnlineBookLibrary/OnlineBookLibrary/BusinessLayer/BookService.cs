@@ -37,6 +37,14 @@ namespace OnlineBookLibrary.BusinessLayer
 
         }
 
+        public Book DeleteBook(int id)
+        {
+            var book = _bookRepository.GetBookById(id);
+             _bookRepository.Delete(book);
+            return book;
+
+        }
+
         public List<Book> GetAll()
         {
             var books = _bookRepository.GetAll();
@@ -47,5 +55,7 @@ namespace OnlineBookLibrary.BusinessLayer
         {
            return _bookRepository.GetBookById(id);
         }
+
+       
     }
 }

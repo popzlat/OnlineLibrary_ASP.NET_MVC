@@ -16,6 +16,7 @@ namespace OnlineBookLibrary.Models
         public string Password { get; set; }
         public Role Role { get; set; }
         public int RollId { get; set; }
+        public ICollection<UserRoll> UserRoles{ get; set; }
 
     }
 }

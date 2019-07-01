@@ -13,7 +13,7 @@ namespace OnlineBookLibrary.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int LoanBookId { get; set; }
-        public Book Books { get; set; }
+        public Book Book { get; set; }
         public User User { get; set; }
         public DateTime LoanDate { get; set; }
         public LoanStatus Status { get; set; }

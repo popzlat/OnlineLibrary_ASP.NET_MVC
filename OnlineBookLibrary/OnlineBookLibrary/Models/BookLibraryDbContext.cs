@@ -18,34 +18,40 @@ namespace OnlineBookLibrary.Models
         public DbSet<User> Users { get; set; }
         public DbSet<Loan> Loans { get; set; }
         public DbSet<LoanStatus> LoanStatuses { get; set; }
-       // public DbSet<Genre> Genre { get; set; }
+        public DbSet<UserRoll> UserRolls { get; set; }
 
 
 
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             modelBuilder.Entity<Author>()
                 .HasOne(x => x.Book)
                 .WithOne(x => x.Author)
                 .HasForeignKey<Book>(x => x.AuthorId);
+          
+            modelBuilder.Entity<UserRoll>()
+                .HasKey(ur => new { ur.UserId, ur.RoleId});
 
-            //modelBuilder.Entity<Book>()
-            //    .HasOne(x => x.Author)
-            //    .WithOne(x => x.Book)
-            //    .HasForeignKey<Author>(x => x.BookId);
+            modelBuilder.Entity<UserRoll>()
+                .HasOne(ur => ur.Role)
+                .WithMany(x => x.UserRoles)
+                .HasForeignKey(bc => bc.UserId);
 
-            //modelBuilder.Entity<Book>()
-            //    .HasOne(x => x.Genre)
-            //    .WithOne(x => x.Book)
-            //    .HasForeignKey<Genre>(x => x.BookId);
+            modelBuilder.Entity<UserRoll>()
+                .HasOne(ur => ur.User)
+                .WithMany(x => x.UserRoles)
+                .HasForeignKey(bc => bc.RoleId)
+                 .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<User>()
                 .HasOne(x => x.Role)
                 .WithOne(x => x.User)
-                .HasForeignKey<Role>(x => x.UserId);
+                .HasForeignKey<Role>(x => x.UserId)
+                 .OnDelete(DeleteBehavior.Restrict);
 
-          
+
 
             //seed
 
