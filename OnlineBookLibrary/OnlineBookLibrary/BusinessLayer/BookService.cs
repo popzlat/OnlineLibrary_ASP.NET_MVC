@@ -24,7 +24,7 @@ namespace OnlineBookLibrary.BusinessLayer
         public void CreateBook(BookViewModel model)
         {
 
-            var author = _authorRepository.GetAll().FirstOrDefault(x=>x.Id == model.Id);
+            var author = _authorRepository.GetAll().FirstOrDefault(x=>x.Id == model.SelectedAuthorId);
             Book book = new Book();
             book.Name = model.Name;
             book.Isbn = model.Isbn;
@@ -32,6 +32,7 @@ namespace OnlineBookLibrary.BusinessLayer
             book.Description = model.Description;
             book.Quantity = model.Quantity;
             book.Author = author;
+            book.AuthorId = author.Id;
             _bookRepository.Create(book);
 
 

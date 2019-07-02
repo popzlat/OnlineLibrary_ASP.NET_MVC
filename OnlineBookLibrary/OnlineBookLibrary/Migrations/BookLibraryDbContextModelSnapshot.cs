@@ -25,8 +25,6 @@ namespace OnlineBookLibrary.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BookId");
-
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
@@ -37,37 +35,31 @@ namespace OnlineBookLibrary.Migrations
                         new
                         {
                             Id = 1,
-                            BookId = 1,
                             Name = "Orson Scott"
                         },
                         new
                         {
                             Id = 2,
-                            BookId = 2,
                             Name = "Truman Capote"
                         },
                         new
                         {
                             Id = 3,
-                            BookId = 3,
                             Name = "Graeme Simsion"
                         },
                         new
                         {
                             Id = 4,
-                            BookId = 0,
                             Name = "Ernest Hemingway"
                         },
                         new
                         {
                             Id = 5,
-                            BookId = 0,
                             Name = "George R. R. Martin"
                         },
                         new
                         {
                             Id = 6,
-                            BookId = 0,
                             Name = "Gillian Flynn"
                         });
                 });
@@ -94,8 +86,7 @@ namespace OnlineBookLibrary.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuthorId")
-                        .IsUnique();
+                    b.HasIndex("AuthorId");
 
                     b.ToTable("Books");
 
@@ -232,8 +223,8 @@ namespace OnlineBookLibrary.Migrations
             modelBuilder.Entity("OnlineBookLibrary.Models.Book", b =>
                 {
                     b.HasOne("OnlineBookLibrary.Models.Author", "Author")
-                        .WithOne("Book")
-                        .HasForeignKey("OnlineBookLibrary.Models.Book", "AuthorId")
+                        .WithMany("Books")
+                        .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

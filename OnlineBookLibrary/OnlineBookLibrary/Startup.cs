@@ -44,7 +44,8 @@ namespace OnlineBookLibrary
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            const string connection = @"Server=DESKTOP-VII7QKF\SQLEXPRESS;Database=OnlineBookLibraryDb;Trusted_Connection=True";
+            const string connection = @"Server=PETRA07;Database=OnlineLibrary;User Id=SA;password=Password1";
+            //const string connection = @"Server=DESKTOP-VII7QKF\SQLEXPRESS;Database=OnlineBookLibraryDb;Trusted_Connection=True";
             services.AddDbContext<BookLibraryDbContext>(options => options.UseSqlServer(connection));
 
         }

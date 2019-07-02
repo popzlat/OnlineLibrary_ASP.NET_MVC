@@ -26,10 +26,10 @@ namespace OnlineBookLibrary.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.Entity<Author>()
-                .HasOne(x => x.Book)
-                .WithOne(x => x.Author)
-                .HasForeignKey<Book>(x => x.AuthorId);
+            modelBuilder.Entity<Book>()
+                .HasOne(x => x.Author)
+                .WithMany(x => x.Books)
+                .HasForeignKey(x => x.AuthorId);
           
             modelBuilder.Entity<UserRoll>()
                 .HasKey(ur => new { ur.UserId, ur.RoleId});
@@ -58,20 +58,17 @@ namespace OnlineBookLibrary.Models
             modelBuilder.Entity<Author>().HasData(new Author
             {
                 Id = 1,
-                Name = "Orson Scott",
-                BookId = 1
+                Name = "Orson Scott"
                 
             }, new Author
             {
                 Id = 2,
-                Name= "Truman Capote",
-                BookId = 2
+                Name= "Truman Capote"
 
             }, new Author
             {
                 Id = 3,
-                Name = "Graeme Simsion",
-                BookId = 3
+                Name = "Graeme Simsion"
 
             }, new Author
             {

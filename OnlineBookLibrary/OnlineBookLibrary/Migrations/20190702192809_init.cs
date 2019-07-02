@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineBookLibrary.Migrations
 {
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,8 +14,7 @@ namespace OnlineBookLibrary.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
-                    BookId = table.Column<int>(nullable: false)
+                    Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -124,18 +123,12 @@ namespace OnlineBookLibrary.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    UserId = table.Column<int>(nullable: false),
-                    LibrarianId = table.Column<int>(nullable: true)
+                    Name = table.Column<string>(nullable: true),
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Role", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Role_Users_LibrarianId",
-                        column: x => x.LibrarianId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Role_Users_UserId",
                         column: x => x.UserId,
@@ -146,15 +139,15 @@ namespace OnlineBookLibrary.Migrations
 
             migrationBuilder.InsertData(
                 table: "Authors",
-                columns: new[] { "Id", "BookId", "Name" },
+                columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                    { 1, 1, "Orson Scott" },
-                    { 2, 2, "Truman Capote" },
-                    { 3, 3, "Graeme Simsion" },
-                    { 4, 0, "Ernest Hemingway" },
-                    { 5, 0, "George R. R. Martin" },
-                    { 6, 0, "Gillian Flynn" }
+                    { 1, "Orson Scott" },
+                    { 2, "Truman Capote" },
+                    { 3, "Graeme Simsion" },
+                    { 4, "Ernest Hemingway" },
+                    { 5, "George R. R. Martin" },
+                    { 6, "Gillian Flynn" }
                 });
 
             migrationBuilder.InsertData(
@@ -175,8 +168,7 @@ namespace OnlineBookLibrary.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Books_AuthorId",
                 table: "Books",
-                column: "AuthorId",
-                unique: true);
+                column: "AuthorId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Loans_BookId",
@@ -192,11 +184,6 @@ namespace OnlineBookLibrary.Migrations
                 name: "IX_Loans_UserId",
                 table: "Loans",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Role_LibrarianId",
-                table: "Role",
-                column: "LibrarianId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Role_UserId",
@@ -249,10 +236,6 @@ namespace OnlineBookLibrary.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_Role_Users_LibrarianId",
-                table: "Role");
-
             migrationBuilder.DropForeignKey(
                 name: "FK_Role_Users_UserId",
                 table: "Role");

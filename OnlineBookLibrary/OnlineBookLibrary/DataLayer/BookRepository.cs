@@ -1,4 +1,5 @@
-﻿using OnlineBookLibrary.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineBookLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace OnlineBookLibrary.DataLayer
         public Book GetBookById(int id)
         {
             var dbSet = _dbContext.Books;
-            return dbSet.FirstOrDefault(x => x.Id == id);
+            return dbSet.Include(x => x.Author).FirstOrDefault(x => x.Id == id);
         }
 
         public void Update(Book obj)

@@ -35,6 +35,8 @@ namespace OnlineBookLibrary.ViewModels
         [DisplayName("Quantity of the book")]
         public int Quantity { get; set; }
 
+        public int SelectedAuthorId { get; set; }
+
 
         public BookViewModel()
         {
