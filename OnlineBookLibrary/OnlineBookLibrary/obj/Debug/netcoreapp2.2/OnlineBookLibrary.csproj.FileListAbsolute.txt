@@ -63,3 +63,38 @@ C:\Users\zlatko.poposki\Desktop\New folder (2)\OnlineLibrary_ASP.NET_MVC\OnlineB
 C:\Users\zlatko.poposki\Desktop\New folder (2)\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.pdb
 C:\Users\zlatko.poposki\Desktop\New folder (2)\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.csproj.CopyComplete
 C:\Users\zlatko.poposki\Desktop\New folder (2)\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.csprojAssemblyReference.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.deps.json
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.runtimeconfig.json
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.runtimeconfig.dev.json
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.dll
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.pdb
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.Views.dll
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\bin\Debug\netcoreapp2.2\OnlineBookLibrary.Views.pdb
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.csprojAssemblyReference.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.csproj.CoreCompileInputs.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.RazorAssemblyInfo.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.RazorAssemblyInfo.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.AssemblyInfoInputs.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.AssemblyInfo.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.TagHelpers.input.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.TagHelpers.output.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.RazorCoreGenerate.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Book\Create.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Book\Details.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Book\Index.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.RazorTargetAssemblyInfo.cache
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.RazorTargetAssemblyInfo.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.Views.pdb
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.dll
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.pdb
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\OnlineBookLibrary.csproj.CopyComplete
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Author\ListAllAuthors.g.cshtml.cs
+C:\Users\zlatko.poposki\Desktop\c#\MVC\OnlineLibrary_ASP.NET_MVC\OnlineBookLibrary\OnlineBookLibrary\obj\Debug\netcoreapp2.2\Razor\Views\Loan\LoanBook.g.cshtml.cs

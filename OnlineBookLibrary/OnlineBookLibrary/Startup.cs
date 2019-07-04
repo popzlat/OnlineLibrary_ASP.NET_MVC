@@ -42,10 +42,11 @@ namespace OnlineBookLibrary
 
 
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            const string connection = @"Server=PETRA07;Database=OnlineLibrary;User Id=SA;password=Password1";
-            //const string connection = @"Server=DESKTOP-VII7QKF\SQLEXPRESS;Database=OnlineBookLibraryDb;Trusted_Connection=True";
+           // const string connection = @"Server=PETRA07;Database=OnlineLibrary;User Id=SA;password=Password1";  //SEDC DB
+            //const string connection = @"Server=DESKTOP-VII7QKF\SQLEXPRESS;Database=OnlineBookLibraryDb;Trusted_Connection=True";  //Home DB
+            const string connection = @"Server=ZLATKOPO-E530\SQLEXPRESSS;Database=OnlineBookLibraryDb;Trusted_Connection=True";// Musala Db
+
             services.AddDbContext<BookLibraryDbContext>(options => options.UseSqlServer(connection));
 
         }

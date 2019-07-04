@@ -26,5 +26,10 @@ namespace OnlineBookLibrary.BusinessLayer
                 Text = x.Name
             }).ToList();
         }
+
+        public List<Author> ListAllAuthors()
+        {
+            return _authorReopsitory.GetAll().ToList();
+        }
     }
 }

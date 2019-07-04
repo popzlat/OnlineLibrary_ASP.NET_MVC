@@ -1,5 +1,5 @@
 ﻿@model List<Book>
-<h1>Index</h1>
+<h3>Zlatko's Online Book Library</h3>
 
 <div class="container">
     <table class="table">
@@ -20,12 +20,15 @@
                     <td>
                         @Html.ActionLink("Delete", "Delete", new { id = book.Id }) |
                         @Html.ActionLink("Details", "Details", new { id = book.Id }) |
-                        @Html.ActionLink("Create", "Create", new { id = book.Id })
+                        @Html.ActionLink("Edit", "Edit", new { id = book.Id })
                     </td>
                 </tr>
             }
         </tbody>
     </table>
+    <div>
+        <a asp-action="Create" asp-controller="Book" class="btn btn-primary">Create new book</a>
+    </div>
 
 
 </div>

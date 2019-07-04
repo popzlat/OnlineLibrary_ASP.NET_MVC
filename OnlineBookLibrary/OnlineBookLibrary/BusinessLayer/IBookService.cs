@@ -10,5 +10,6 @@ namespace OnlineBookLibrary.BusinessLayer
         Book GetBookById(int id);
         void CreateBook(BookViewModel model);
         Book DeleteBook(int id);
+
     }
 }

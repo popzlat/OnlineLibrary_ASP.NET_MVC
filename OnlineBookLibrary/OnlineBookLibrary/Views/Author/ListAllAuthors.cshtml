@@ -1,0 +1,20 @@
+﻿@model List<Author>
+@{
+    ViewData["Title"] = "ListAllAuthors";
+}
+
+<h1>List of all authors in the library</h1>
+
+<div class="container">
+    <table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id &nbsp;@item.Name</td>
+            </tr>
+        }
+    </table>
+    <div>
+        <a asp-controller="Book" asp-action="Index">Back to List</a>
+    </div>
+</div>
